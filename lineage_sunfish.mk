@@ -12,14 +12,24 @@ $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
 
 include device/google/sunfish/device-lineage.mk
 
+# RisingOS Flags.
+RISING_MAINTAINER := xioyo
+TARGET_ENABLE_BLUR := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+
+# Extra Flags.
+RISING_BATTERY := 3140mah
+RISING_STORAGE := 128gb
+RISING_RAM := 6gb
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a
 PRODUCT_NAME := lineage_sunfish
-
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sunfish-user 13 TQ3A.230805.001.S1 10786265 release-keys" \
