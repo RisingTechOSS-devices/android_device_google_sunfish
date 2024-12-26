@@ -1,14 +1,14 @@
 [
 	{
 		"remote"		:	"github",
-		"repository"		:	"RisingOSS-devices/android_vendor_google_sunfish",
+		"repository"		:	"RisingTechOSS-devices/vendor_google_sunfish",
 		"branch"		:	"fifteen",
 		"target_path"		:	"vendor/google/sunfish"
 	},
 	{
                 "remote"                :       "github",
                 "repository"            :       "LineageOS/android_kernel_google_msm-4.14",
-                "branch"                :       "lineage-22.0",
+                "branch"                :       "lineage-22.1",
                 "target_path"           :       "kernel/google/msm-4.14"
         }
 ]
