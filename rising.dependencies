@@ -1,14 +1,18 @@
 [
-	{
-		"remote"		:	"github",
-		"repository"		:	"RisingTechOSS-devices/vendor_google_sunfish",
-		"branch"		:	"fifteen",
-		"target_path"		:	"vendor/google/sunfish"
-	},
-	{
-                "remote"                :       "github",
-                "repository"            :       "LineageOS/android_kernel_google_msm-4.14",
-                "branch"                :       "lineage-22.1",
-                "target_path"           :       "kernel/google/msm-4.14"
+    {
+        "remote": "devices",
+        "repository": "vendor_google_sunfish",
+        "target_path": "vendor/google/sunfish",
+        "revision": "fifteen"
+    },
+    {
+        "remote": "rising",
+        "repository": "android_kernel_google_msm-4.14",
+        "target_path": "kernel/google/msm-4.14",
+        "revision": "lineage-22.1",
+        "override": {
+            "repo": "LineageOS/android_kernel_google_msm-4.14",
+            "path": "kernel/google/msm-4.14"
         }
+    }
 ]
